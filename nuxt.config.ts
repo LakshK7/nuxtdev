@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@invictus.codes/nuxt-vuetify"],
+  modules: ["@invictus.codes/nuxt-vuetify", "nuxt-icon"],
 
   vuetify: {
     vuetifyOptions: {},

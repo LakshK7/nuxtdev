@@ -11,8 +11,8 @@
       >
     </v-app-bar>
 
-    <!-- <v-card> -->
     <v-main class="image-background" :style="backgroundImageStyle">
+      <slot></slot>
       <!-- <v-container>
         <v-row align-content="center" justify="center" style="margin-top: 20%">
           <v-col v-for="n in 3" :key="n" cols="4"
@@ -20,8 +20,6 @@
         ></v-row>
       </v-container> -->
     </v-main>
-
-    <!-- </v-card> -->
   </v-app>
 </template>
 
@@ -46,7 +44,7 @@ const backgroundImageStyle = computed(() => {
 onMounted(() => {
   setInterval(() => {
     index.value = (index.value + 1) % backgroundImage.value.length;
-    console.log(index.value);
+    // console.log(index.value);
   }, 5000);
 });
 </script>
