@@ -9,6 +9,19 @@
       <v-toolbar-title style="font-weight: 5000; color: white"
         >My Portfolio</v-toolbar-title
       >
+      <v-spacer></v-spacer>
+      <p style="color: white; font-weight: 5000">
+        <NuxtLink to="/"><span style="padding: 15px">Home</span></NuxtLink>
+        <NuxtLink to="/about"
+          ><span style="padding: 15px">About</span></NuxtLink
+        >
+        <NuxtLink to="/workexp"
+          ><span style="padding: 15px">Work Experience</span></NuxtLink
+        >
+        <NuxtLink to="/projects"
+          ><span style="padding: 15px">Projects</span></NuxtLink
+        >
+      </p>
     </v-app-bar>
 
     <v-main class="image-background" :style="backgroundImageStyle">
@@ -28,9 +41,10 @@
 import { ref, computed, onMounted } from "vue";
 
 const backgroundImage = ref([
-  "space1.jpeg",
-  "wallpaperflare.com_wallpaper.jpg",
-  "newgalaxy.jpg",
+  "pxfuel.jpg",
+  "pxfuel1.jpg",
+  "pxfuel2.jpg",
+  "pxfuel4.jpg",
 ]);
 
 const index = ref(0);

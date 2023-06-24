@@ -4,75 +4,113 @@
     <v-row>
       <v-col cols="6">
         <v-card
-          height="400"
+          height="auto"
           elevation="0"
           style="
             background-color: transparent !important;
-            font-size: 50px;
+            font-size: 45px;
             margin-top: 15%;
             /* margin-top: 50px; */
             margin-left: 40px;
             color: white;
           "
-          ><p>Hey! 👋</p>
-          <p style="margin-top: 10px">Welcome to my Portfolio 🚀</p>
-          <p class="data-value">
-            I'm a <span>{{ typedData }}</span>
+          ><p
+            style="
+              font-size: 150px;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                Geneva, Verdana, sans-serif;
+              color: black;
+            "
+          >
+            <b>Hey!</b>
+          </p>
+          <p style="margin-top: 50px">Welcome to my Portfolio</p>
+          <p class="data-value" style="margin-top: 50px">
+            I'm a
+            <span style="font-size: 55px; color: black"
+              ><b>{{ typedData }}</b></span
+            >
           </p></v-card
         >
       </v-col>
-      <v-col cols="5" style="margin-right: 10px; margin-left: 40px">
-        <v-card
-          height="300"
-          style="
-            background-color: transparent !important;
-            font-size: 50px;
-            /* color: white; */
-            margin-top: 55%;
-          "
-          elevation="0"
-          ><v-card-title
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 50px;
-              margin-top: 2px;
-              color: white;
-            "
-            >Built Using</v-card-title
-          >
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 10px;
-            "
-          >
-            <v-icon color="white">mdi-arrow-bottom-left</v-icon>
-            <v-icon
-              color="white"
-              style="padding-left: 100px; padding-right: 100px"
-              >mdi-arrow-down</v-icon
+      <v-col cols="6">
+        <v-row>
+          <v-col cols="12">
+            <v-card
+              height="300"
+              elevation="0"
+              style="
+                background-color: transparent !important;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
             >
-            <v-icon color="white">mdi-arrow-bottom-right</v-icon>
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 20px;
-            "
-          >
-            <Icon name="devicon:nuxtjs" size="75" />
-            <span style="padding-left: 100px; padding-right: 100px">
-              <Icon name="devicon:typescript" size="75" />
-            </span>
-            <Icon name="devicon:vuetify" size="75" />
-          </div>
-        </v-card>
+              <button
+                style="border: 2px solid black; padding: 10px; width: 100px"
+                @click="downloadResume"
+              >
+                Resume
+              </button>
+            </v-card>
+          </v-col>
+          <v-col cols="12">
+            <v-card
+              height="auto"
+              style="
+                background-color: transparent !important;
+                font-size: 50px;
+                /* color: white; */
+                /* margin-top: 70%; */
+                /* margin-left: 30%; */
+                margin: 50px;
+              "
+              elevation="0"
+              ><v-card-title
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 50px;
+                  margin-top: 2px;
+                  color: white;
+                "
+                >Built Using</v-card-title
+              >
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: 10px;
+                "
+              >
+                <v-icon color="white">mdi-arrow-bottom-left</v-icon>
+                <v-icon
+                  color="black"
+                  style="padding-left: 100px; padding-right: 100px"
+                  >mdi-arrow-down</v-icon
+                >
+                <v-icon color="white">mdi-arrow-bottom-right</v-icon>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: 20px;
+                "
+              >
+                <Icon name="devicon:nuxtjs" size="75" />
+                <span style="padding-left: 100px; padding-right: 100px">
+                  <Icon name="devicon:typescript" size="75" />
+                </span>
+                <Icon name="devicon:vuetify" size="75" />
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
     <!-- </v-container> -->
@@ -120,6 +158,11 @@ function typedOutData() {
       clearInterval(typingInterval);
     }
   }, 100);
+}
+
+function downloadResume() {
+  let fileUrl = "NYGRADResume.pdf";
+  window.open(fileUrl, "_blank");
 }
 </script>
 
