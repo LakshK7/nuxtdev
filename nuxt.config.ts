@@ -20,4 +20,8 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  router: {
+    base: "/nuxtdev/",
+  },
 });
