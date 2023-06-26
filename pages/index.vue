@@ -72,7 +72,7 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  font-size: 50px;
+                  font-size: 45px;
                   margin-top: 2px;
                   color: white;
                 "
