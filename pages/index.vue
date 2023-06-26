@@ -158,7 +158,7 @@ function typedOutData() {
 }
 
 function downloadResume() {
-  let fileUrl = "NYGRADResume.pdf";
+  let fileUrl = "/assets/NYGRADResume.pdf";
   window.open(fileUrl, "_blank");
 }
 </script>

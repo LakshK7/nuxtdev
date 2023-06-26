@@ -43,10 +43,10 @@
 import { ref, computed, onMounted } from "vue";
 
 const backgroundImage = ref([
-  "pxfuel.jpg",
-  "pxfuel1.jpg",
-  "pxfuel2.jpg",
-  "pxfuel4.jpg",
+  "/assets/pxfuel.jpg",
+  "/assets/pxfuel1.jpg",
+  "/assets/pxfuel2.jpg",
+  "/assets/pxfuel4.jpg",
 ]);
 
 const index = ref(0);

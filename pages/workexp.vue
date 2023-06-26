@@ -63,11 +63,11 @@ const timeline = ref([
 ]);
 
 const logos = ref([
-  "Analysis-Group-Logo.png",
-  "nyutandon.jpg",
-  "Analysis-Group-Logo.png",
-  "nyutandon.jpg",
-  "innoway.jpeg",
+  "/assets/Analysis-Group-Logo.png",
+  "/assets/nyutandon.jpg",
+  "/assets/Analysis-Group-Logo.png",
+  "/assets/nyutandon.jpg",
+  "/assets/innoway.jpeg",
 ]);
 
 function updateModal(key: number) {
