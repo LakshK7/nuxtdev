@@ -19,9 +19,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-  },
-
-  router: {
-    base: "/nuxtdev/",
+    baseURL: "/nuxtdev/",
   },
 });
