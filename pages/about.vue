@@ -10,8 +10,8 @@
           <p
             style="
               font-size: 100px;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                Geneva, Verdana, sans-serif;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
             "
           >
             About Me

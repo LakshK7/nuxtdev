@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-main>
+      <h1 class="heading">Experience</h1>
       <v-container class="cardcols">
         <v-row class="cardcols">
           <v-col cols="4" :key="n" v-for="n in 5">
@@ -118,5 +119,12 @@ function updateModal(key: number) {
   margin-left: 75px;
   margin-top: 15px;
   /* background-color: transparent !important; */
+}
+
+.heading {
+  font-size: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 </style>

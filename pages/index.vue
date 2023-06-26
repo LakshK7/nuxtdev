@@ -47,12 +47,7 @@
                 align-items: center;
               "
             >
-              <button
-                style="border: 2px solid black; padding: 10px; width: 100px"
-                @click="downloadResume"
-              >
-                Resume
-              </button>
+              <button @click="downloadResume">Resume</button>
             </v-card>
           </v-col>
           <v-col cols="12">
@@ -184,5 +179,16 @@ function downloadResume() {
   100% {
     width: 100%;
   }
+}
+
+button {
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  border-radius: 16px;
+  margin-top: 35px;
+  border: 2px solid black;
 }
 </style>
