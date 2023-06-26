@@ -47,7 +47,9 @@
                 align-items: center;
               "
             >
-              <button @click="downloadResume">Resume</button>
+              <button @click="downloadResume">
+                Resume <Icon name="system-uicons:arrow-down-circle" size="30" />
+              </button>
             </v-card>
           </v-col>
           <v-col cols="12">

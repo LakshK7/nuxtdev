@@ -75,6 +75,12 @@ function updateModal(key: number) {
   selectedKey.value = key;
   console.log(selectedKey.value);
 }
+
+useHead({
+  title: "My Portfolio | Work Experience",
+
+  meta: [{ name: "description", content: "My work exp" }],
+});
 </script>
 
 <style scoped>

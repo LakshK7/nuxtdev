@@ -7,4 +7,17 @@ export default defineNuxtConfig({
   vuetify: {
     vuetifyOptions: {},
   },
+
+  app: {
+    head: {
+      title: "My Portfolio",
+
+      meta: [
+        {
+          name: "description",
+          content: "My virtual portfolio created in NuxtJs",
+        },
+      ],
+    },
+  },
 });

@@ -3,14 +3,16 @@
     <v-app-bar
       :elevation="5"
       rounded
-      style="background-color: transparent !important"
+      style="
+        background-color: transparent !important;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+      "
     >
       <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
-      <v-toolbar-title style="font-weight: 5000; color: white"
-        >My Portfolio</v-toolbar-title
-      >
+      <v-toolbar-title style="color: white">My Portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
-      <p style="color: white; font-weight: 5000">
+      <p style="color: white">
         <NuxtLink to="/"><span style="padding: 15px">Home</span></NuxtLink>
         <NuxtLink to="/about"
           ><span style="padding: 15px">About</span></NuxtLink

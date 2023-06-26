@@ -42,6 +42,14 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "My Portfolio | About",
+
+  meta: [
+    { name: "description", content: "Short description about my background" },
+  ],
+});
+</script>
 
 <style scoped></style>

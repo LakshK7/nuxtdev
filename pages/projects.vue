@@ -82,6 +82,12 @@ function downloadSUDPred() {
   let fileUrl = "Revised Project Proposal (2).pdf";
   window.open(fileUrl, "_blank");
 }
+
+useHead({
+  title: "My Portfolio | Projects",
+
+  meta: [{ name: "description", content: "Some projects I completed" }],
+});
 </script>
 
 <style scoped>
