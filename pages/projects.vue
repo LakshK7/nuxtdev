@@ -74,12 +74,12 @@ function redirectGit() {
 }
 
 function downloadYTVid() {
-  let fileUrl = "/assets/Marketing on Youtube Project Report.pdf";
+  let fileUrl = "/Marketing on Youtube Project Report.pdf";
   window.open(fileUrl, "_blank");
 }
 
 function downloadSUDPred() {
-  let fileUrl = "/assets/Revised Project Proposal (2).pdf";
+  let fileUrl = "/Revised Project Proposal (2).pdf";
   window.open(fileUrl, "_blank");
 }
 
