@@ -22,5 +22,5 @@ export default defineNuxtConfig({
     baseURL: "/nuxtdev/",
   },
 
-  ssr: false,
+  ssr: true,
 });
